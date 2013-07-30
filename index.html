@@ -23,7 +23,7 @@
 </style>
 <script src="js/yui3/build/yui/yui-min.js"></script>
 <script src="js/menuplugin.js"></script>
-<script src="js/phonegap.js"></script>
+
 <script src="js/app.js"></script>
 <script src="js/index.js"></script>
 <link rel="stylesheet" href="css/pure/build/pure-min.css">
@@ -33,14 +33,10 @@
 <body >
    <div class="pure-g-r" id="layout">
         <a href="#menu" id="menuLink" class="pure-menu-link top yui3-toggle yui3-module">
-    <img src="images/259-list-white.png" width="23"
+    <img src="img/259-list-white.png" width="23"
          alt="Menu toggle">
 </a>
        
-<a href="#roll" id="rollLink" class="pure-menu-link bottom yui3-toggle yui3-module">
-    <img src="images/130-dice-white.png" width="23"
-         alt="Menu toggle">
-</a>
        <div class="pure-u" id="menu">
    
 
@@ -50,7 +46,6 @@
        <div class="hero" id="pageContent">
     <h1 class="pure-u-1">Team Ojam</h1>
     <h2 class="pure-u-3-4 l-centered"> We are a colection of the best people around .</h2>
-    <hr/>
     <div class="hero-cta pure-u-3-4">
     
     </div>
@@ -71,7 +66,7 @@
         {{#menu}}
          <li class="menu-item-divided">
                 <div class="pure-g">
-                <a href="#/{{title}}">
+                <a href="/{{link}}">
                 <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
                 
                 <div class="pure-u-1-2"> {{title}} </div>
@@ -81,6 +76,50 @@
                  {{/if}}
                     </a>
                     </div>
+            </li>
+        {{/menu}}
+        </ul>
+         </div>
+    </script>
+    
+    
+    <script type="text/x-template" id="sub-menu-template">
+         <div>
+        <ul>
+        {{#menu}}
+         <li class="menu-item-divided">
+                <div class="pure-g">
+                <a href="/{{link}}">
+                <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
+                <div class="pure-u-5-6">
+                     {{title}} 
+                    <br/>
+                    {{subtitle}}
+                </div>
+                </a>
+                </div>
+            </li>
+        {{/menu}}
+        </ul>
+         </div>
+    </script>
+    
+    
+    <script type="text/x-template" id="blog-template">
+         <div>
+        <ul>
+        {{#menu}}
+         <li class="menu-item-divided">
+                <div class="pure-g">
+                <a href="/{{link}}">
+                <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
+                <div class="pure-u-5-6">
+                     {{title}} 
+                    <br/>
+                    {{subtitle}}
+                </div>
+                </a>
+                </div>
             </li>
         {{/menu}}
         </ul>

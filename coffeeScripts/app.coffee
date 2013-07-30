@@ -22,7 +22,7 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
     pageApp.route '*', ->
        
         
-    pageApp.route '#/Campaigns', ->
+    pageApp.route '/Campaigns', ->
         Y.one('hero').set('text', 'Example App - Home');
         
     Y.menuplugin.render();

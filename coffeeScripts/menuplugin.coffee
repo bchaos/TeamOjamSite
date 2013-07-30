@@ -9,27 +9,26 @@ YUI.add('menuplugin', (Y) ->
             {
                 title:'Team Projects',
                 image:'103-map-white.png',
+                link: 'Projects',
                 quantity:'1'
             },
             {
                 title:'Team Blogs',
                 image:'251-sword-white.png',
+                link: 'Blogs',
                 quantity:'2'
             },
             {
                 title:'Team Videos',
                 image:'43-film-roll.png',
+                link: 'Videos',
                 quantity:'0'
             },
             {
                 title:'Team Members',
                 image:'111-user.png',
+                link: 'Members',
                 quantity:'5'
-            },
-            {
-                title:'Roll Dice',
-                image:'130-dice-white.png',
-                quantity:[]
             }
         ]
         menuTemplateSource = Y.one('#menu-template').getHTML()
@@ -49,13 +48,7 @@ YUI.add('menuplugin', (Y) ->
         easing:Y.Easing.easeOut,
         duration:0.5
     }
-    rollLinkAnim =  Y.one('#rollLink').plug Y.Plugin.NodeFX, {
-        from: { left: 0 },
-        to: 
-            left :250
-        easing:Y.Easing.easeOut,
-        duration:0.5
-    }  
+
     
     toggleMenus=(e)->
         menuLinkAnim.fx.run();

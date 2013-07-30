@@ -34,7 +34,7 @@
       serverRouting: false
     });
     pageApp.route('*', function() {});
-    pageApp.route('#/Campaigns', function() {
+    pageApp.route('/Campaigns', function() {
       return Y.one('hero').set('text', 'Example App - Home');
     });
     Y.menuplugin.render();
