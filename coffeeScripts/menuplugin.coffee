@@ -4,6 +4,7 @@ YUI.add('menuplugin', (Y) ->
     menuTemplate = null
     menuLink =Y.one('#menuLink');
     rollLink =Y.one('#rollLink');
+    revese =false;
     setupMenu=->
         menuDisplay = menu :[
             {
@@ -48,33 +49,46 @@ YUI.add('menuplugin', (Y) ->
         easing:Y.Easing.easeOut,
         duration:0.5
     }
-
     
+
+
+    contentMenuAnimation= Y.one('.hero').plug Y.Plugin.NodeFX, {
+        from: { left: -250},
+        to: 
+            left:0
+        easing:Y.Easing.easeOut,
+        duration:0.5
+    }
+
+
     toggleMenus=(e)->
-        menuLinkAnim.fx.run();
-        menuLinkAnim.fx.set('reverse', !menuAnim.fx.get('reverse')); 
-       
+            menuLinkAnim.fx.set('reverse', !menuLinkAnim.fx.get('reverse')); 
+            menuLinkAnim.fx.run();
+
+            
+    startSideMenu=(e)->
+            menuAnim.fx.set('reverse', !menuAnim.fx.get('reverse')); 
+            menuAnim.fx.run();
 
         
-    startSideMenu=(e)->
-        menuAnim.fx.run();
-        menuAnim.fx.set('reverse', !menuAnim.fx.get('reverse'));
-        
+    toggleContentMenu =(e) -> 
+            contentMenuAnimation.fx.set('reverse', !contentMenuAnimation.fx.get('reverse'));  
+            contentMenuAnimation.fx.run();
+    
         
     toggleSideMenu = (e)->
         toggleMenus e
         startSideMenu e
+        toggleContentMenu e
         
+   
+            
         
-        
-    
-    toggleRollMenu =(e) ->
-        rollLinkAnim.fx.run();
-        rollLinkAnim.fx.set('reverse', !menuAnim.fx.get('reverse')); 
+     
         
     bindPhoneMenu = ->
         menuLink.on 'click' , toggleSideMenu
-        rollLink.on 'click' , toggleRollMenu
+        
             
     
     Y.menuplugin=  

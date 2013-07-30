@@ -366,12 +366,13 @@ p {
     text-align: center;
     margin: 8em 0 3em;
     overflow:hidden;
+    position:relative;
 }
     .hero h1 {
         font-size: 800%;
         margin: 0;
         padding: 0;
-        color: #1f8dd6;
+        color: red;
         font-weight: 100;
     }
     .hero h2 {
@@ -545,6 +546,8 @@ a.pure-button-secondary {
     .hero {
         margin: 2em 0 1.5em;
         padding: 0.6em;
+        position:absolute;
+        left:-250px;
     }
         .hero h1 {
             font-size: 250%;
