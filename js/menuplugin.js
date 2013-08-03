@@ -31,6 +31,10 @@
             image: '111-user.png',
             link: 'Members',
             quantity: '5'
+          }, {
+            title: 'Forum',
+            image: '33-cabinet-white.png',
+            link: 'Members'
           }
         ]
       };
