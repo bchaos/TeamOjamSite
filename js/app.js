@@ -34,8 +34,20 @@
       serverRouting: false
     });
     pageApp.route('*', function() {});
-    pageApp.route('/Campaigns', function() {
-      return Y.one('hero').set('text', 'Example App - Home');
+    pageApp.route('/Projects', function() {
+      return Y.one('hero').set('text', 'Project list');
+    });
+    pageApp.route('/Blogs', function() {
+      return Y.one('hero').set('text', 'Blogs');
+    });
+    pageApp.route('/Videos', function() {
+      return Y.one('hero').set('text', 'Videos');
+    });
+    pageApp.route('/Members', function() {
+      return Y.one('hero').set('text', 'Member section');
+    });
+    pageApp.route('/Forum', function() {
+      return window.location = 'http://teamojam.com/forums/';
     });
     Y.menuplugin.render();
     return pageApp.render().dispatch();
