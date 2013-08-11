@@ -34,7 +34,7 @@ YUI.add('menuplugin', (Y) ->
             {
                 title:'Forum',
                 image:'33-cabinet-white.png',
-                link: 'Members',
+                link: 'Forum',
                 
             }
         ]
@@ -86,11 +86,6 @@ YUI.add('menuplugin', (Y) ->
         toggleMenus e
         startSideMenu e
         toggleContentMenu e
-        
-   
-            
-        
-     
         
     bindPhoneMenu = ->
         menuLink.on 'click' , toggleSideMenu

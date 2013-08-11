@@ -32,7 +32,7 @@
       transitions: true,
       container: '#pageContent',
       serverRouting: false
-    });
+    }); 
     pageApp.route('*', function() {});
     pageApp.route('/Projects', function() {
       return Y.one('hero').set('text', 'Project list');

@@ -34,7 +34,7 @@
           }, {
             title: 'Forum',
             image: '33-cabinet-white.png',
-            link: 'Members'
+            link: 'Forum'
           }
         ]
       };
