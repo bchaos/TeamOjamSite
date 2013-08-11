@@ -22,19 +22,19 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
     pageApp.route '*', ->
        
         
-    pageApp.route '/#/Projects', ->
+    pageApp.route '/Projects', ->
         Y.one('hero').set('text', 'Project list');
         
-    pageApp.route '/#/Blogs', ->
+    pageApp.route '/Blogs', ->
         Y.one('hero').set('text', 'Blogs');
         
-    pageApp.route '/#/Videos', ->
+    pageApp.route '/Videos', ->
         Y.one('hero').set('text', 'Videos');
     
-    pageApp.route '/#/Members', ->
+    pageApp.route '/Members', ->
         Y.one('hero').set('text', 'Member section');
     
-    pageApp.route '/#/Forum', ->
+    pageApp.route '/Forum', ->
        window.location ='http://teamojam.com/forums/'
         
     Y.menuplugin.render();
