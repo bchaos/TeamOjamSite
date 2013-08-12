@@ -4,35 +4,32 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
     pageApp = new Y.App {
                     views: 
                         home : {preserve: true},
-                        campaigns: {parent: 'home'},
-                        players: {parent: 'home'},
-                        npcs: {parent: 'home'},
-                        encounters: {parent: 'home'},
-                        notes: {parent: 'home'},
-                        external: {parent: 'home'},
-                        about: {parent: 'home'},
+                        Projects: {parent: 'home'},
+                        Blogs: {parent: 'home'},
+                        Videos: {parent: 'home'},
+                        Members: {parent: 'home'},
                     transitions: 
                         true
                     container:
                         '#pageContent'
                     serverRouting:
-                        false
+                        true
     }
     
     pageApp.route '*', ->
        
         
-    pageApp.route '/Projects', ->
-        Y.one('hero').set('text', 'Project list');
+    pageApp.route ' /Projects', ->
+        Y.one('#pageContent').set('text', 'Project list');
         
     pageApp.route '/Blogs', ->
-        Y.one('hero').set('text', 'Blogs');
+        Y.one('#pageContent').set('text', 'Blogs');
         
     pageApp.route '/Videos', ->
-        Y.one('hero').set('text', 'Videos');
+        Y.one('#pageContent').set('text', 'Videos');
     
     pageApp.route '/Members', ->
-        Y.one('hero').set('text', 'Member section');
+        Y.one('#pageContent').set('text', 'Member section');
     
     pageApp.route '/Forum', ->
        window.location ='http://teamojam.com/forums/'

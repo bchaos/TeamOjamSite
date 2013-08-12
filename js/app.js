@@ -7,44 +7,35 @@
         home: {
           preserve: true
         },
-        campaigns: {
+        Projects: {
           parent: 'home'
         },
-        players: {
+        Blogs: {
           parent: 'home'
         },
-        npcs: {
+        Videos: {
           parent: 'home'
         },
-        encounters: {
-          parent: 'home'
-        },
-        notes: {
-          parent: 'home'
-        },
-        external: {
-          parent: 'home'
-        },
-        about: {
+        Members: {
           parent: 'home'
         }
       },
       transitions: true,
       container: '#pageContent',
-      serverRouting: false
+      serverRouting: true
     });
     pageApp.route('*', function() {});
-    pageApp.route('/Projects', function() {
-      return Y.one('hero').set('text', 'Project list');
+    pageApp.route(' /Projects', function() {
+      return Y.one('#pageContent').set('text', 'Project list');
     });
     pageApp.route('/Blogs', function() {
-      return Y.one('hero').set('text', 'Blogs');
+      return Y.one('#pageContent').set('text', 'Blogs');
     });
     pageApp.route('/Videos', function() {
-      return Y.one('hero').set('text', 'Videos');
+      return Y.one('#pageContent').set('text', 'Videos');
     });
     pageApp.route('/Members', function() {
-      return Y.one('hero').set('text', 'Member section');
+      return Y.one('#pageContent').set('text', 'Member section');
     });
     pageApp.route('/Forum', function() {
       return window.location = 'http://teamojam.com/forums/';
