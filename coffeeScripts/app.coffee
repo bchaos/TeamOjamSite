@@ -15,10 +15,7 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
                     serverRouting:
                         true
     }
-    
-    pageApp.route '*', ->
-       
-        
+     
     pageApp.route ' /Projects', ->
         Y.one('#pageContent').set('text', 'Project list');
         

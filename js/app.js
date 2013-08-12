@@ -24,7 +24,6 @@
       container: '#pageContent',
       serverRouting: true
     });
-    pageApp.route('*', function() {});
     pageApp.route(' /Projects', function() {
       return Y.one('#pageContent').set('text', 'Project list');
     });
