@@ -15,9 +15,10 @@
         ]
       },
       render: function() {
-        var container, content;
+        var content;
         content = this.template(this.Ojam);
-        return container = this.get('container').setHTML(content);
+        this.get('container').setHTML(content);
+        return this;
       }
     });
     BlogView = Y.BlogView = Y.Base.create('blogView', Y.View, [], {
@@ -40,9 +41,10 @@
         ]
       },
       render: function() {
-        var container, content;
+        var content;
         content = this.template(this.Ojam);
-        return container = this.get('container').setHTML(content);
+        this.get('container').setHTML(content);
+        return this;
       }
     });
     VideoView = Y.VideoView = Y.Base.create('videoView', Y.View, [], {
@@ -81,9 +83,10 @@
         ]
       },
       render: function() {
-        var container, content;
+        var content;
         content = this.template(this.Ojam);
-        return container = this.get('container').setHTML(content);
+        this.get('container').setHTML(content);
+        return this;
       }
     });
     pageApp = new Y.App({

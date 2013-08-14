@@ -16,7 +16,8 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
         
         render:->
             content = this.template(this.Ojam);
-            container = this.get('container').setHTML(content)
+            this.get('container').setHTML(content)
+            this
                                                         
     }
     
@@ -42,7 +43,8 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
         ]}
         render:->
             content = this.template(this.Ojam);
-            container = this.get('container').setHTML(content)
+            this.get('container').setHTML(content)
+            this
                                                         
     }
                 
@@ -92,7 +94,8 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
         
         render:->
             content = this.template(this.Ojam);
-            container = this.get('container').setHTML(content)
+            this.get('container').setHTML(content)
+            this
                                                         
     }
  
