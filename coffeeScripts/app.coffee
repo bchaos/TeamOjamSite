@@ -94,15 +94,21 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
         
         render:->
             content = this.template(this.Ojam);
-            this.get('container').setHTML(content)
+            this.get('container').setHTML content
             this
                                                         
     }
- 
+    HomeView = Y.HomeView=Y.Base.create 'homeView' , Y.View , [] , {
+    
+        render : -> 
+            this.get ('container').setHTML '<div class="hero-cta pure-u-3-4"><h1 class="pure-u-1">Team Ojam</h1><h2 class="pure-u-3-4 l-centered"> We are a collection of the best people around .</h2>'
+            this
+    
+    }
     
     pageApp = new Y.App {
                     views: 
-                        home : {preserve: true},
+                        home : {preserve: true ,   type : HomeView},
                         Projects: {parent: 'home', type : ProjectView },
                         Blogs: {parent: 'home',    type : BlogView},
                         Videos: {parent: 'home',   type : VideoView},
@@ -114,7 +120,8 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
                     serverRouting:
                         true
     }
-     
+    pageApp.route '/', -> 
+        this.showView('home');
     pageApp.route ' /Projects', ->
         this.showView('Projects');
         

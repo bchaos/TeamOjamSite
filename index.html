@@ -45,9 +45,7 @@
 
        <div class="hero" id="pageContent">
    
-    <div class="hero-cta pure-u-3-4">
-     <h1 class="pure-u-1">Team Ojam</h1>
-    <h2 class="pure-u-3-4 l-centered"> We are a collection of the best people around .</h2>
+  
     </div>
 </div>
        
@@ -82,19 +80,20 @@
     
     <script type="text/x-template" id="blog-template">
          <div>
-        
+        <div class="pure-g-r">
         {{#Blogs}}
-                <div class="pure-g-r">
-                <a href="/{{link}}">
+                
+                
                 <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
                 <div class="pure-u-5-6">
-                     {{name}} 
+                    <a href="{{link}}"> <h2>  {{name}}  </h2></a>
                     <br/>
-                    {{description}}
+                    <h1> {{description}} </h1> 
                 </div>
-                </a>
-                </div>
+               
+                
         {{/Blogs}}
+        </div>
          </div>
     </script>
     
