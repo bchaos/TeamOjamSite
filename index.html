@@ -84,11 +84,11 @@
         {{#Blogs}}
                 
                 
-                <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
-                <div class="pure-u-5-6">
+                <div class="pure-u-2-6" width="26"> <img src="{{image}}"/> </div>
+                <div class="pure-u-4-6">
                     <a href="{{link}}"> <h2>  {{name}}  </h2></a>
                     <br/>
-                    <h1> {{description}} </h1> 
+                    <h3> {{description}} </h3> 
                 </div>
                
                 
@@ -102,8 +102,8 @@
         
         {{#Members}}
                 <div class="pure-g-r">
-                <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
-                <div class="pure-u-5-6">
+                <div class="pure-u-1-3" width="26"> <img src="{{image}}" /> </div>
+                <div class="pure-u-2-3">
                      {{name}} --- {{creator}}
                     <br/>
                     {{description}}
@@ -120,7 +120,7 @@
         {{#projects}}
             <div class="pure-g">
                 <a href="/{{link}}">
-                <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
+                <div class="pure-u-1-6"> <img src="{{image}}" width="26"/> </div>
                 <div class="pure-u-5-6">
                      {{name}} --- {{creator}}
                     <br/>
