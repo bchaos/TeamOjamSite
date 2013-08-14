@@ -86,13 +86,13 @@
          <div>
         
         {{#blogs}}
-                <div class="pure-g">
+                <div class="pure-g-r">
                 <a href="/{{link}}">
                 <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
                 <div class="pure-u-5-6">
-                     {{title}} 
+                     {{name}} 
                     <br/>
-                    {{subtitle}}
+                    {{description}}
                 </div>
                 </a>
                 </div>
@@ -100,24 +100,42 @@
          </div>
     </script>
     
-    <script type="text/x-template" id="projects-template">
+    <script type="text/x-template" id="member-template">
          <div>
-        <ul>
-        {{#projects}}
-         <li class="menu-item-divided">
-                <div class="pure-g">
-                <a href="/{{link}}">
+        
+        {{#Members}}
+                <div class="pure-g-r">
                 <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
                 <div class="pure-u-5-6">
-                     {{title}} 
+                     {{name}} --- {{creator}}
                     <br/>
-                    {{subtitle}}
+                    {{description}}
                 </div>
                 </a>
                 </div>
-            </li>
+        {{/Members}}
+         </div>
+    </script>
+    
+    <script type="text/x-template" id="video-template">
+    
+     </script>
+    <script type="text/x-template" id="projects-template">
+         <div>
+        {{#projects}}
+            <div class="pure-g">
+                <a href="/{{link}}">
+                <div class="pure-u-1-6"> <img src="img/{{image}}" width="26"/> </div>
+                <div class="pure-u-5-6">
+                     {{name}} --- {{creator}}
+                    <br/>
+                    {{description}}
+                </div>
+                </a>
+                </div>
+            
         {{/projects}}
-        </ul>
+        
          </div>
     </script>
         
