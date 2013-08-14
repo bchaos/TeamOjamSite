@@ -101,7 +101,7 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
     HomeView = Y.HomeView=Y.Base.create 'homeView' , Y.View , [] , {
     
         render : -> 
-            this.get ('container').setHTML '<div class="hero-cta pure-u-3-4"><h1 class="pure-u-1">Team Ojam</h1><h2 class="pure-u-3-4 l-centered"> We are a collection of the best people around .</h2>'
+            this.get('container').setHTML '<div class="hero-cta pure-u-3-4"><h1 class="pure-u-1">Team Ojam</h1><h2 class="pure-u-3-4 l-centered"> We are a collection of the best people around .</h2>'
             this
     
     }
