@@ -3,7 +3,7 @@
   YUI().use('node-base', 'node-event-delegate', 'app-base', 'app-transitions', 'handelbars', 'menuplugin', function(Y) {
     var BlogView, MemberView, ProjectView, VideoView, pageApp;
     ProjectView = Y.ProjectView = Y.Base.create('projectView', Y.View, [], {
-      projectTemplate: Y.Handlebars.compile(Y.one('#projects-template').getContent()),
+      template: Y.Handlebars.compile(Y.one('#projects-template').getContent()),
       Ojam: {
         projects: [
           {
@@ -21,7 +21,7 @@
       }
     });
     BlogView = Y.BlogView = Y.Base.create('blogView', Y.View, [], {
-      projectTemplate: Y.Handlebars.compile(Y.one('#blog-template').getContent()),
+      template: Y.Handlebars.compile(Y.one('#blog-template').getContent()),
       Ojam: {
         Blogs: [
           {
@@ -54,7 +54,7 @@
       }
     });
     MemberView = Y.MemberView = Y.Base.create('memberView', Y.View, [], {
-      projectTemplate: Y.Handlebars.compile(Y.one('#member-template').getContent()),
+      template: Y.Handlebars.compile(Y.one('#member-template').getContent()),
       Ojam: {
         Members: [
           {
