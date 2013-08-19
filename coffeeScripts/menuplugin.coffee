@@ -59,9 +59,9 @@ YUI.add('menuplugin', (Y) ->
 
 
     contentMenuAnimation= Y.one('.hero').plug Y.Plugin.NodeFX, {
-        from: { left: -250},
+        from: { left: 0},
         to: 
-            left:0
+            left:100
         easing:Y.Easing.easeOut,
         duration:0.5
     }
@@ -89,7 +89,7 @@ YUI.add('menuplugin', (Y) ->
         
     bindPhoneMenu = ->
         menuLink.on 'click' , toggleSideMenu
-        
+        toggleSideMenu null
             
     
     Y.menuplugin=  

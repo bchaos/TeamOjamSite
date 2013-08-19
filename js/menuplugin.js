@@ -63,10 +63,10 @@
     });
     contentMenuAnimation = Y.one('.hero').plug(Y.Plugin.NodeFX, {
       from: {
-        left: -250
+        left: 0
       },
       to: {
-        left: 0
+        left: 100
       },
       easing: Y.Easing.easeOut,
       duration: 0.5
@@ -89,7 +89,8 @@
       return toggleContentMenu(e);
     };
     bindPhoneMenu = function() {
-      return menuLink.on('click', toggleSideMenu);
+      menuLink.on('click', toggleSideMenu);
+      return toggleSideMenu(null);
     };
     return Y.menuplugin = {
       render: function() {
