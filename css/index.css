@@ -141,15 +141,23 @@ h1 {
              line-height: 1.8em;
                     word-spacing:1px;
 }         
-                .post-title {
-font-size: 2em;
-color: #222;
-margin-bottom: 0.2em;
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
 }
                 .post-meta {
-color: #999;
-font-size: 90%;
-margin: 0;
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+                .post-avatar {
+border-radius: 50px;
+float: right;
+margin-left: 1em;
+}
+                .post {
+padding-bottom: 2em;
 }
 /*
  * -- TABLET MEDIA QUERIES --

@@ -84,17 +84,15 @@
        
         <div class="hero-cta pure-u-3-4">
         {{#Blogs}}
-                <div class="pure-g">
+                <section class='post'>
+                <header class="post-header">
+                <img class ="post-avatar" src="{{image}}"  width="50"/>
                 
-                <div class="pure-u-2-6"> <img src="{{image}}"  width="40"/> </div>
-                <div class="pure-u-4-6 ">
                    <h2 class ="post-title">  <a href="{{link}}"> <h2>  {{name}}  </h2></a>
                    <p class="post-meta">By {{creator}} </p>
-                    <br/>
-                    <div class ="post-description"> {{description}}  </div>
-                </div>
-               </div>
-                
+                   </header>
+                    <div class ="post-description"> <p> {{description}}  </p> </div>
+                </section>
         {{/Blogs}}
         </div>
         
@@ -127,7 +125,7 @@
                          <div class="pure-g-r">
         <div class="hero-cta pure-u-3-4">
         {{#projects}}
-            <div class="banner" style="background:url('{{image}}')">
+            <div class="banner" style="background:url('img/{{image}}')">
               <a href="/{{link}}">
                 <h1 class="banner-head">
                      <h2 class ="post-title">{{name}} </h2>
