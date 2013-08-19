@@ -89,8 +89,7 @@
       return toggleContentMenu(e);
     };
     bindPhoneMenu = function() {
-      menuLink.on('click', toggleSideMenu);
-      return toggleSideMenu(null);
+      return menuLink.on('click', toggleSideMenu);
     };
     return Y.menuplugin = {
       render: function() {

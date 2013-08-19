@@ -89,7 +89,7 @@ YUI.add('menuplugin', (Y) ->
         
     bindPhoneMenu = ->
         menuLink.on 'click' , toggleSideMenu
-        toggleSideMenu null
+        
             
     
     Y.menuplugin=  
