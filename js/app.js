@@ -10,7 +10,7 @@
             name: 'DM Keeper',
             creator: 'Bradford Farmer',
             description: 'A must have tool for any DM on your ipad and iphone.',
-            image: 'DMKeeper.png'
+            image: 'dmkeeperbg.png'
           }
         ]
       },
