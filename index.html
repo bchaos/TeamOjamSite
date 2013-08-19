@@ -28,7 +28,7 @@
 <script src="js/index.js"></script>
 <link rel="stylesheet" href="css/pure/build/pure-min.css">
 <link rel="stylesheet" href="css/pure.css">
-    <link rel='stylesheet' href ='css/index.css'>
+<link rel='stylesheet' href ='css/index.css'>
     </head>
 
 <body >
@@ -83,16 +83,19 @@
        
        
         <div class="hero-cta pure-u-3-4">
+        
         {{#Blogs}}
+            <hr/> 
                 <section class='post'>
                 <header class="post-header">
                 <img class ="post-avatar" src="{{image}}"  width="50"/>
                 
-                   <h2 class ="post-title">  <a href="{{link}}"> <h2>  {{name}}  </h2></a>
+                   <h2 class="post-title">  <a href="{{link}}">  {{name}}  </h2></a>
                    <p class="post-meta">By {{creator}} </p>
                    </header>
                     <div class ="post-description"> <p> {{description}}  </p> </div>
                 </section>
+                
         {{/Blogs}}
         </div>
         

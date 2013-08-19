@@ -145,6 +145,7 @@ h1 {
     font-size: 2em;
     color: #222;
     margin-bottom: 0.2em;
+    color:black;
 }
                 .post-meta {
     color: #999;
@@ -158,6 +159,7 @@ margin-left: 1em;
 }
                 .post {
 padding-bottom: 2em;
+                    text-align:left;
 }
 /*
  * -- TABLET MEDIA QUERIES --
