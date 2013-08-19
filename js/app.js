@@ -118,7 +118,9 @@
           type: MemberView
         }
       },
-      transitions: true,
+      transitions: {
+        navigate: 'slideLeft'
+      },
       container: '#pageContent',
       serverRouting: true
     });

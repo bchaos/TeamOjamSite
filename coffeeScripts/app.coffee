@@ -114,7 +114,8 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
                         Videos: {parent: 'home',   type : VideoView},
                         Members: {parent: 'home',  type : MemberView},
                     transitions: 
-                        true
+                        navigate: 'slideLeft'
+                    
                     container:
                         '#pageContent'
                     serverRouting:
