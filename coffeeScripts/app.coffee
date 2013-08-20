@@ -51,7 +51,6 @@ YUI().use 'node-base', 'node-event-delegate', 'app-base', 'app-transitions','han
     VideoView= Y.VideoView= Y.Base.create 'videoView', Y.View, [], {
         
         projectTemplate:  Y.Handlebars.compile(Y.one('#video-template').getContent())
-        
         render:->
             content = this.template(this.Ojam);
             container = this.get('container').setHTML(content)
