@@ -20,12 +20,6 @@ YUI.add('menuplugin', (Y) ->
                 quantity:'2'
             },
             {
-                title:'Team Videos',
-                image:'43-film-roll.png',
-                link: 'Videos',
-                quantity:'0'
-            },
-            {
                 title:'Team Members',
                 image:'111-user.png',
                 link: 'Members',
